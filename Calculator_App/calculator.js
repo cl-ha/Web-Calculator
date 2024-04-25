@@ -10,6 +10,12 @@ function appendToDisplay(input)
     // Đặt lại cờ đã tính toán
     flag = false;
   } 
+  //Nếu không nhập dấu phép tính
+  else if (flag)
+  {
+    display.value = input;
+    flag = false;
+  }
   else 
   {
     // Nếu không, thực hiện thêm số hoặc dấu phép tính vào màn hình như bình thường
