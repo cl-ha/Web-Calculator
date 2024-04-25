@@ -3,22 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 .container{
-  width: 450px;
-  min-height: 300px;
-  border: 1px solid #ccc;;
+  height: 500px;
+  background: url(./images/background.webp) no-repeat;
+  background-size: 100% 500px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
   padding: 20px;
   position: relative;
+  margin-top: 100px;
 }
 .calculator{
   width: 350px;
-  margin: 50px auto;
+  margin: 70px 200px 20px 200px;
   border: 1px solid black;
   border-radius: 20px;
   padding: 25px;
@@ -27,8 +25,8 @@ body{
 .calculator::after{
   content: "CALCULATOR";
   position: absolute;
-  top: 10px;
-  left: 135px;
+  top: 25px;
+  left: 300px;
   font-size: 25px;
   font-weight: bold;
   padding: 5px;

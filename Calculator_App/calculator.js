@@ -30,7 +30,7 @@ function toggleSign()
 }
 
 //Hàm tính toán
-var flagResult = false; //chưa tính toán
+var flag = false; //chưa tính toán
 function calculate()
 {  
   try
@@ -41,6 +41,6 @@ function calculate()
   }
   catch(error)
   {
-    document.getElementById('display').value = "Error!";
+    document.getElementById('display').value = "Error";
   }
 }
