@@ -40,8 +40,6 @@ function toggleSign()
 
 //Hàm tính toán
 var flag = false; //chưa tính toán
-var check = false; 
-var preValue;
 
 function calculate()
 {  
