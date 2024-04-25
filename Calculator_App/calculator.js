@@ -1,35 +1,18 @@
-const display = document.getElementById("display");
-//Hàm xóa màn hình
-function clearDisplay()
-{
-  display.value = "";
-}
-
-// //Hàm tính số đối
-// function toggleSign()
-// {
-
-// }
-
-// //Hàm tính phần trăm
-// function calPercentage()
-// {
-
-// }
-
-//Hàm xuất hiện số trên màn hình khi bấm button 
+//Hàm hiện giá trị các số/phép tính lên màn hình
 function appendToDisplay(input)
 {
-  display.value += input;
+  document.getElementById('display').value += input;
+}
+
+//Hàm xóa tất cả giá trị đang có trên màn hình
+function clearDisplay() 
+{
+  document.getElementById('display').value = '';
 }
 
 //Hàm tính toán
 function calculate()
 {
-  try{
-    display.value = eval(display.value);
-  }
-  catch(error){
-    display.value ="Error!";
-  }  
+  var result = eval(document.getElementById('display').value);
+  document.getElementById('display').value = result;
 }
